@@ -8,7 +8,7 @@
 
 #include "FileController.hpp"
 
-vector<CrimeData> FileController :: readCrimeDataToVetor(string filename)
+vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
     std:: vector <CrimeData> crimeVector;
     string currentCSVLine;
