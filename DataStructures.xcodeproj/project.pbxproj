@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D99FEF0E20221FEB00F63B9A /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */; };
 		D9CF9BFF20220BE900D86340 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9BFD20220BE900D86340 /* Controller.cpp */; };
 		D9CF9C0220220BF300D86340 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0020220BF300D86340 /* Runner.cpp */; };
 		D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0520220CD500D86340 /* FileController.cpp */; };
@@ -26,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D99FEF0B20221FEB00F63B9A /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		D99FEF0D20221FEB00F63B9A /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		D9CF9BF320220BDC00D86340 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CF9BFD20220BE900D86340 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		D9CF9BFE20220BE900D86340 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -97,6 +101,9 @@
 		D9CF9C0B20221A6000D86340 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D99FEF0B20221FEB00F63B9A /* crime.csv */,
+				D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */,
+				D99FEF0D20221FEB00F63B9A /* CrimeData.hpp */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9CF9C0220220BF300D86340 /* Runner.cpp in Sources */,
+				D99FEF0E20221FEB00F63B9A /* CrimeData.cpp in Sources */,
 				D9CF9BFF20220BE900D86340 /* Controller.cpp in Sources */,
 				D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */,
 				D9CF9C0A20220F5D00D86340 /* Timer.cpp in Sources */,
