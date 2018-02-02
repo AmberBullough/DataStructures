@@ -9,7 +9,7 @@
 #ifndef FileController_hpp
 #define FileController_hpp
 
-#include "Data/CrimeData.hpp"
+#include "../Data/CrimeData.hpp"
 
 #include <string>
 #include <fstream>

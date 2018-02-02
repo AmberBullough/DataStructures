@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D9CF9C0020220BF300D86340 /* Runner.cpp */,
+				D9CF9C0B20221A6000D86340 /* Data */,
 				D9CF9C0320220C9300D86340 /* Controller */,
 			);
 			path = DataStructures;
@@ -83,7 +84,6 @@
 				D9CF9C0620220CD500D86340 /* FileController.hpp */,
 				D9CF9BFD20220BE900D86340 /* Controller.cpp */,
 				D9CF9BFE20220BE900D86340 /* Controller.hpp */,
-				D9CF9C0B20221A6000D86340 /* Data */,
 				D9CF9C0420220CA800D86340 /* Tools */,
 			);
 			path = Controller;

@@ -20,11 +20,14 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     {
         while (!dataFile.eof())
         {
-            getline(dataFile,currentCSVLine, '\r');
+            getline(dataFile,currentCSVLine, '\n');
             if (rowCount != 0)
             {
-                CrimeData row(currentCSVLine);
+               if(currentCSVLine.length() !=0)
+               {
+                   CrimeData row(currentCSVLine);
                 crimeVector.push_back(row);
+               }
             }
             rowCount++;
         }
@@ -37,3 +40,4 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     
     return crimeVector;
 }
+
