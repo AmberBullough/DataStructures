@@ -30,7 +30,7 @@ public:
     //Operators
     Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
-    Type operator {} (int index) const;
+    Type operator[] (int index) const;
     
     // Methods
     int getSize() const;
@@ -51,13 +51,13 @@ Array<Type> :: Array(int size)
 template <class Type>
 Array<Type> :: Array(const Array<Type> & toCopy)
 {
-    this ->size = tpCopy.getSize();
+    this ->size = toCopy.getSize();
 
-    internalArray = newType[size]; // builds data structure
+    internalArray = new Type[size]; // builds data structure
     
     for(int index = 0; index < size; index++)
     {
-        internalArray{index} = toCopy[index];
+        internalArray[index] = toCopy[index];
         
     }
 }
@@ -65,12 +65,14 @@ Array<Type> :: Array(const Array<Type> & toCopy)
 template <class Type>
 Array<Type> :: ~Array()
 {
+    cout << "About to delete the structure" << endl;
     delete [] internalArray;
+    cout << "internal array deleted" << endl;
 }
 
 
 template <class Type>
-Array<Type> & Array<Type> :: operator = const Array<Type> & toAssign)
+Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
 {
     if (&toAssign != this)
     {
@@ -89,15 +91,15 @@ Array<Type> & Array<Type> :: operator = const Array<Type> & toAssign)
     return *this;
 }
 
-template <classType>
+template <class Type>
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
 }
 
-template <classType>
-Type & Array<Type> :: operator [] (int index) const
+template <class Type>
+Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
@@ -109,8 +111,8 @@ int Array<Type> :: getSize() const
     return size;
 }
 
-template <classType>
-Type & Array<Type> :: getFromIndex(int index)
+template <class Type>
+Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
     

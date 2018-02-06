@@ -7,13 +7,18 @@
 //
 
 #include "Controller.hpp"
+#include "ArrayTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {
     
-    findMaxAndMin();
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
+    
+   // findMaxAndMin();
     
     //cout << "testing the Timer class" << endl;
     //Timer codeTimer;
