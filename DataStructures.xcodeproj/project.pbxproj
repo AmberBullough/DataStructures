@@ -13,6 +13,7 @@
 		D9CF9C0220220BF300D86340 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0020220BF300D86340 /* Runner.cpp */; };
 		D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0520220CD500D86340 /* FileController.cpp */; };
 		D9CF9C0A20220F5D00D86340 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0820220F5D00D86340 /* Timer.cpp */; };
+		D9D507B320348F0B003B5F37 /* LinearNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D507B120348F0B003B5F37 /* LinearNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,8 @@
 		D9CF9C0620220CD500D86340 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		D9CF9C0820220F5D00D86340 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		D9CF9C0920220F5D00D86340 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		D9D507B120348F0B003B5F37 /* LinearNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearNode.cpp; sourceTree = "<group>"; };
+		D9D507B220348F0B003B5F37 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				D9AA0941202A10E800F069CB /* Node.hpp */,
+				D9D507B120348F0B003B5F37 /* LinearNode.cpp */,
+				D9D507B220348F0B003B5F37 /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */,
 				D9AA093F202A00E500F069CB /* ArrayTester.cpp in Sources */,
 				D9CF9C0A20220F5D00D86340 /* Timer.cpp in Sources */,
+				D9D507B320348F0B003B5F37 /* LinearNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
