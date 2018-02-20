@@ -17,6 +17,8 @@ using namespace std;
 
 class CrimeData
 {
+
+    
 private:
     string department;
     int population;
@@ -42,6 +44,7 @@ private:
     int year;
     
 public:
+    CrimeData();
     CrimeData(string dataLine);
     
     string getDepartment() const;
