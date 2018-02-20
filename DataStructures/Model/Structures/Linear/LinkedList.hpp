@@ -28,8 +28,8 @@ void LinkedList<Type> :: add(Type item)
 template <classType>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
-    assert(index >= 0 && index <= size);
-    if index == size)
+    assert(index >= 0 && index <= this ->size);
+    if index == this->size)
     {
         add(item);
     }
@@ -53,14 +53,52 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
             previous -> setNextNode(toBeAdded);
             toBeAdded -> setNextNode(current);
         }
-        size ++;
+        this -> size++;
     }
 }
 
 template<class Type>
 Type LinkedList<Type> :: remove(int index)
 {
+    assert(index >= 0 && index < this ->se);
     
+    LinearNode<Type> * current = front;
+    LinearNode<Type> * toBeRemoved = nullptr;
+    LinearNode<Type> * previou = mullptr;
+    
+    Type removedData;
+    
+    if(index == 0)
+    {
+        toBeRemoved = front;
+        this->front = this->front->getNextNode();
+    }
+    else
+    {
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current ->getNextNode();
+        }
+        toBeRemoved = current;
+        
+        if (index == this -> size -1)
+        {
+            previous ->setNextNode(nullptr);
+            end = previous;
+        }
+        else
+        {
+            current = toBeRemoved ->getNextNode();
+            previous-> setNextNode(current);
+        }
+    }
+    this->size -+ 1;
+    
+    removedData = toBeRemoved->getData();
+    delete toBeRemoved;
+    return removedData;
+    }
 }
 
 #endif /* LinkedList_h */
