@@ -6,12 +6,12 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#include LinkedListTester_hpp
+#ifndef LinkedListTester_hpp
 #define LinkedListTester_hpp
 
 #include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Controller/FileController.hpp"
-#include "../Controller/Tools/Time.hpp"
+#include "../Controller/Tools/Timer.hpp"
 #include "../Data/CrimeData.hpp"
 #include <iostream>
 
