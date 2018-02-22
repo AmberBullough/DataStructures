@@ -38,6 +38,8 @@
 		D9AA093D202A00E500F069CB /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		D9AA093E202A00E500F069CB /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		D9AA0941202A10E800F069CB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		D9AE6CCE203F220400337DE8 /* Linear.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Linear.hpp; sourceTree = "<group>"; };
+		D9AE6CD0203F222700337DE8 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		D9BB2BE42024BFEE0015C2D6 /* Array.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		D9BB2BE92024C0410015C2D6 /* LinkedList.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		D9BB2BEA2024C04A0015C2D6 /* List.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
@@ -99,6 +101,8 @@
 				D9BB2BE42024BFEE0015C2D6 /* Array.hpp */,
 				D9BB2BE92024C0410015C2D6 /* LinkedList.hpp */,
 				D9BB2BEA2024C04A0015C2D6 /* List.hpp */,
+				D9AE6CCE203F220400337DE8 /* Linear.hpp */,
+				D9AE6CD0203F222700337DE8 /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
