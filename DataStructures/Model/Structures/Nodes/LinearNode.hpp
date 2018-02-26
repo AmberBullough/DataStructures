@@ -28,6 +28,6 @@ public:
     virtual linearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
     
-}
+};
 
 #endif /* LinearNode_hpp */
