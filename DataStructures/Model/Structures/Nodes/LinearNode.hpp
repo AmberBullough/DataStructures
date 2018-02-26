@@ -11,7 +11,7 @@
 
 #include <assert.h>
 #include "../../Nodes/LinearNode.hpp"
-#include "../"
+#include "../../Nodes/Node.hpp"
 
 class LinearNode
 {
@@ -31,4 +31,12 @@ public:
     
 };
 
+class Node : public Node
+{
+public:
+    Node();
+    Node(Type data);
+    void setData(Type data);
+    Type getData();
+};
 #endif /* LinearNode_hpp */
