@@ -11,7 +11,6 @@
 		D99FEF0E20221FEB00F63B9A /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */; };
 		D9AA093F202A00E500F069CB /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9AA093D202A00E500F069CB /* ArrayTester.cpp */; };
 		D9CF9BFF20220BE900D86340 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9BFD20220BE900D86340 /* Controller.cpp */; };
-		D9CF9C0220220BF300D86340 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0020220BF300D86340 /* Runner.cpp */; };
 		D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0520220CD500D86340 /* FileController.cpp */; };
 		D9CF9C0A20220F5D00D86340 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9C0820220F5D00D86340 /* Timer.cpp */; };
 		D9D507B320348F0B003B5F37 /* LinearNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D507B120348F0B003B5F37 /* LinearNode.cpp */; };
@@ -32,6 +31,7 @@
 /* Begin PBXFileReference section */
 		D922B9CB203C7CFC000D4D11 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		D922B9CC203C7CFC000D4D11 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
+		D9542E0320445B5100E64594 /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularList.h; sourceTree = "<group>"; };
 		D99FEF0B20221FEB00F63B9A /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		D99FEF0D20221FEB00F63B9A /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
@@ -46,7 +46,6 @@
 		D9CF9BF320220BDC00D86340 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CF9BFD20220BE900D86340 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		D9CF9BFE20220BE900D86340 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
-		D9CF9C0020220BF300D86340 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		D9CF9C0520220CD500D86340 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		D9CF9C0620220CD500D86340 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		D9CF9C0820220F5D00D86340 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 				D9AA0941202A10E800F069CB /* Node.hpp */,
 				D9D507B120348F0B003B5F37 /* LinearNode.cpp */,
 				D9D507B220348F0B003B5F37 /* LinearNode.hpp */,
+				D9542E0320445B5100E64594 /* CircularList.h */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -145,7 +145,6 @@
 			children = (
 				D9AA093C202A00C900F069CB /* Testers */,
 				D9BB2BE32024BFB40015C2D6 /* Model */,
-				D9CF9C0020220BF300D86340 /* Runner.cpp */,
 				D9CF9C0B20221A6000D86340 /* Data */,
 				D9CF9C0320220C9300D86340 /* Controller */,
 			);
@@ -240,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CF9C0220220BF300D86340 /* Runner.cpp in Sources */,
 				D99FEF0E20221FEB00F63B9A /* CrimeData.cpp in Sources */,
 				D9CF9BFF20220BE900D86340 /* Controller.cpp in Sources */,
 				D9CF9C0720220CD500D86340 /* FileController.cpp in Sources */,

@@ -11,6 +11,7 @@
 
 #include <assert.h>
 #include "../../Nodes/LinearNode.hpp"
+#include "../"
 
 class LinearNode
 {
