@@ -7,6 +7,7 @@
 //
 
 #include "FileController.hpp"
+#include
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
@@ -41,14 +42,14 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     return crimeVector;
 }
 
-LinkedList<CrimeDatafileCOntroller :: readDataToList(string fileName)
+void LinkedList<FileController::readDataToLost(string fileName)
 {
     LinkedList<CrimeData> crimes;
-    
+
     string currentCSVLine;
     int rowCount = 0;
     ifstream dataFile(fileName);
-    
+
     if(dataFile.is_open())
     {
         while(!dataFile.eof())
@@ -72,3 +73,4 @@ LinkedList<CrimeDatafileCOntroller :: readDataToList(string fileName)
     }
     return crimes;
 }
+

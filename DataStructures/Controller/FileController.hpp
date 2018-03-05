@@ -10,6 +10,7 @@
 #define FileController_hpp
 
 #include "../Data/CrimeData.hpp"
+#include "../Model/Structures/Linear/LinkedList.hpp"
 
 #include <string>
 #include <fstream>

@@ -8,15 +8,19 @@
 
 #include "Controller.hpp"
 #include "ArrayTester.hpp"
+#include "RecursionTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {
     
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
+    RecursionTester test;
+    test.testRecursionNumbers();
+    
+  //  ArrayTester myTest;
+ //   myTest.testArrayUse();
+ //   myTest.testAdvancedArray();
     
    // findMaxAndMin();
     
@@ -59,18 +63,19 @@ void Controller :: findMaxAndMin()
     cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
     cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
-        
-}
-    //cout << "Print to the screen some text" << endl;
-   // codeTimer.stopTimer();
-   // codeTimer.displayInformation();
     
-   // codeTimer.resetTimer();
-   // codeTimer.startTimer();
-  //  for(int index = 0; index < 10000;  index++)
-   // {
-   //     cout << "The index is " << index << "\t";
-   // }
-   // codeTimer.stopTimer();
-  //  codeTimer.displayInformation();
+}
+//    cout << "Print to the screen some text" << endl;
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+//
+//    codeTimer.resetTimer();
+//    codeTimer.startTimer();
+//    for(int index = 0; index < 10000;  index++)
+//    {
+//        cout << "The index is " << index << "\t";
+//    }
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+
 
