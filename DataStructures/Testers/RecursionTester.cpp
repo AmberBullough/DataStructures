@@ -39,5 +39,6 @@ void RecursionTester:: testRecursionNumbers()
 
 void RecursionTester:: testRecursionString()
 {
-    
+    cout << mysterty("X" << endl;
+                     cout << mystery("Car, apple))
 }
