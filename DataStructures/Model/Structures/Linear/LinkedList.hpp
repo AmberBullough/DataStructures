@@ -34,7 +34,7 @@ public:
    virtual Type getFromIndex(int index);
    virtual Type remove(int index);
 };
-
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
