@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D922B9CD203C7CFC000D4D11 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D922B9CB203C7CFC000D4D11 /* LinkedListTester.cpp */; };
 		D97B2E71204D900F003950FC /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97B2E6F204D900F003950FC /* RecursionTester.cpp */; };
+		D99459D6205AB40200464FF8 /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D99459D4205AB40200464FF8 /* SortingTester.cpp */; };
 		D99FEF0E20221FEB00F63B9A /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */; };
 		D9AA093F202A00E500F069CB /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9AA093D202A00E500F069CB /* ArrayTester.cpp */; };
 		D9CF9BFF20220BE900D86340 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9CF9BFD20220BE900D86340 /* Controller.cpp */; };
@@ -35,6 +36,8 @@
 		D97B2E6F204D900F003950FC /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		D97B2E70204D900F003950FC /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 		D986908420470E4900BA8376 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		D99459D4205AB40200464FF8 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
+		D99459D5205AB40200464FF8 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		D99FEF0B20221FEB00F63B9A /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		D99FEF0C20221FEB00F63B9A /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		D99FEF0D20221FEB00F63B9A /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				D922B9CC203C7CFC000D4D11 /* LinkedListTester.hpp */,
 				D97B2E6F204D900F003950FC /* RecursionTester.cpp */,
 				D97B2E70204D900F003950FC /* RecursionTester.hpp */,
+				D99459D4205AB40200464FF8 /* SortingTester.cpp */,
+				D99459D5205AB40200464FF8 /* SortingTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				D9CF9C0A20220F5D00D86340 /* Timer.cpp in Sources */,
 				D922B9CD203C7CFC000D4D11 /* LinkedListTester.cpp in Sources */,
 				D97B2E71204D900F003950FC /* RecursionTester.cpp in Sources */,
+				D99459D6205AB40200464FF8 /* SortingTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

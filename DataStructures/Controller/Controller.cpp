@@ -14,9 +14,11 @@ using namespace std;
 
 void Controller :: start()
 {
+    SortingTester my;
+    my.testSorts();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
+    //RecursionTester test;
+   // test.testRecursionNumbers();
     
   //  ArrayTester myTest;
  //   myTest.testArrayUse();
