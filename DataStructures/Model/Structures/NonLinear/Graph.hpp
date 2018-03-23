@@ -51,9 +51,9 @@ public:
     std::set<int> neightbors(int vertex) const;
     
     // Transversals
-    void dephFirstTranversal(Graph<Type> & graph, int vertex);
-    void breadtheFirstTransversia(Graph<Type> & graoh, int vertex);
-    int costTraversal(Graph<Type> & graph, int vertex);
+    void dephFirstTranversal(Graph<Type> & currentGraph, int vertex);
+    void breadtheFirstTransversia(Graph<Type> & currentGraph, int vertex);
+    int costTraversal(Graph<Type> & currentGraph, int vertex);
 };
 
 template <class Type>
