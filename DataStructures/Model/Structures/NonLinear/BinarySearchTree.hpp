@@ -79,7 +79,7 @@ int BinarySearchTree<Type> :: getSize()
 }
 
 template <class Type>
-bool BinarySearchTree<Type> :: isComplet()
+bool BinarySearchTree<Type> :: isComplete()
 {
     return false;
 }
@@ -144,13 +144,13 @@ void BinarySearchTree<Type>:: inOrderTransversal()
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTransversal()
 {
-  
+    preOrderTransversal(this->root);
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTransversal()
 {
-    
+    postOrderTransversal(this->root);
 }
 
 template <class Type>
@@ -173,7 +173,7 @@ void BinarySearchTree<Type> :: insert(Type item)
 }
     
 template <class Type>
-bool BinarySearchTree<Type> :: contains(YTpe value)
+bool BinarySearchTree<Type> :: contains(Type value)
 {
     return false;
 }
@@ -183,5 +183,36 @@ void BinarySearchTree<Type> :: remove(Type item)
 {
         
 }
+    
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * currentNode)
+{
+ if(currentNode != nullptr)
+ {
+     inOrderTransversal(currentNode->getLeftNode());
+     cout << currentNode->getData() << endl;
+     inOrderTransversal(currentNode->getRightNode());
+}
+    
+    template <class Type>
+    void BinarySearchTree<Type> :: preOrderTransversal(BinaryTreeNode<Type> * currentNode)
+    {
+        if(currentNode != nullptr)
+        {
+            cout << currentNode->getData() << endl;
+            preOrderTransversal(currentNode->getLeftNode());
+            preOrderTransversal(currentNode->getRightNode());
+    }
+        
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTransversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        postOrderTransversal(currentNode->getLeftNode());
+        postOrderTransversal(currentNode->getRightNode());
+        cout << currentNode->getData() << endl;
+
+    }
     
 #endif /* BinarySearchTree_hpp */
