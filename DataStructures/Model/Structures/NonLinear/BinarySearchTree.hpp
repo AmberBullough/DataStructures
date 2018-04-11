@@ -27,6 +27,8 @@ protected:
     void preOrderTransversal(BinaryTreeNode<Type> * preStart);
     void postOrderTransversal(BinaryTreeNode<Type> * postStart);
     
+    void destroyTree(BinaryTreeNode<Type> * node);
+    
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type>* getLeftMostChild(BinaryTreeNode<Type> * current);
     
@@ -63,6 +65,32 @@ BinarySearchTree<Type> :: BinarySearchTree()
 {
     this->root = nullptr;
 }
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return -1;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplet()
+{
+    return false;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalance()
+{
+    return false;
+}
+
+
 
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
@@ -114,6 +142,18 @@ void BinarySearchTree<Type>:: inOrderTransversal()
 }
 
 template <class Type>
+void BinarySearchTree<Type> :: preOrderTransversal()
+{
+  
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTransversal()
+{
+    
+}
+
+template <class Type>
 void BinarySearchTree<Type>:: inOrderTransversal(BinaryTreeNode<Type> * inStart)
 {
     if(inStart != nullptr)
@@ -123,6 +163,24 @@ void BinarySearchTree<Type>:: inOrderTransversal(BinaryTreeNode<Type> * inStart)
         cout << "Node contents: " << inStart->getData() << endl;
         cout << "Going right" << endl;
         inOrderTransversal(inStart->getRightNode());
+        
+}
+    
+template <class Type>
+void BinarySearchTree<Type> :: insert(Type item)
+{
+        
+}
+    
+template <class Type>
+bool BinarySearchTree<Type> :: contains(YTpe value)
+{
+    return false;
+}
+    
+template <class Type>
+void BinarySearchTree<Type> :: remove(Type item)
+{
         
 }
     
