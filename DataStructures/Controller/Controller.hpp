@@ -16,6 +16,15 @@
 #include <iostream>
 #include <vector>
 
+#include "../Model/Structures/Linear/Array.hpp"
+#include "../Testers/ArrayTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
+#include "../Testers/TestStacksandQueues.hpp"
+#include "../Testers/RecursionTester.hpp"
+#include "../Testers/SortingTester.hpp"
+#include "../Testers/GraphTester.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
+
 class Controller
 {
 private:

@@ -126,4 +126,83 @@ BinaryTreeNode<Type>* AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * pa
     return parent;
 }
 
+template <class Type>
+BinaryTreeNode<Type>* AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent, Type inserted)
+{
+    if(parent == nullptr)
+    {
+        return parent;
+    }
+    if(inserted <parent->getnodeData())
+    {
+        parent->setLeftChild(removeNode(parent->getLeftNode(), inserted));
+    }
+    else if(inserted > parent->getNodeData())
+    {
+        parent->setRightChild(removeNode(parent->getRightNode(), inserted));
+    }
+    else
+    {
+        BinaryTreeNode<Type> * temp;
+        if(parent->getLeftNode() == nullptr && parent->getRightNode() == nullptr)
+        {
+            temp = parent;
+            delete temp;
+        }
+        else if (parent->getLeftNode() == nullptr)
+        {
+            *parent = *parent->getRightNode();
+        }
+        else if (parent->getRightNode() == nullptr)
+        {
+            *parent = *parent->getLeftNode();
+        }
+        else
+        {
+            BinaryTreeNode<Type> * leftMost = htis->getLeftMostChild(parent->getRightNode());
+            parent0>setNodeData(leftMost->getNodeData())
+            ;
+            parent->setRightChild(removeNode(parent->getERightNode(),leftMost->getNodeData()));
+        }
+    }
+    
+    if(parent == nullptr)
+    {
+        return parent;
+    }
+    return balanceSubTree(parent);
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: insertMpde(BinaryTreeNode<Type> * parent, Type inserted)
+{
+    if(parent == nullptr)
+    {
+        parent= new BinaryTreeNode<Type>(inserted);
+        return parent;
+    }
+    else if(inserted parent->getNodeData())
+    {
+        paret->setLeftChild(insertNode(parent->getLeftNode(), inserted));
+        parent = balanceSubTree(parent);
+    }
+    else if (inserted > parent->getNodeData())
+    {
+        parent->setRightChild(insertNode(parent->getRightNode(), inserted));
+        parent = balanceSubTree(parent);
+    }
+    return parent;
+}
+template <class Type>
+void AVLTree<Type> :: insert(Type item)
+{
+    insertNode(this->getRoot(), item);
+}
+
+template <class Type>
+void AVLTree<type> :: remove(Type item)
+{
+    removeNode(this->getRoot(), item);
+}
+
 #endif /* AVLTree_hpp */
