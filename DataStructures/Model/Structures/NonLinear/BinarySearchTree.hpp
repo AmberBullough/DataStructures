@@ -32,7 +32,7 @@ protected:
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type>* getLeftMostChild(BinaryTreeNode<Type> * current);
     
-    void removeNode(BinaryTreeNode<Type> * removeMe);
+    void removeNode(BinaryTreeNode<Type> * getRidOfMe);
     
 public:
     BinarySearchTree();
@@ -51,9 +51,9 @@ public:
     bool isComplete();
     bool isBalanced();
     
-    bool contains(Type value);
+    bool contains(Type itemToFind);
     void insert(Type itemToInsert);
-    void remove(Type value);
+    void remove(Type getRidOfMe);
     
     Type findMinimum();
     Type findMaximum();
@@ -75,7 +75,7 @@ int BinarySearchTree<Type> :: getHeight()
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * current)
 {
-    if(current ~= nullptr)
+    if(current != nullptr)
     {
         return max(calculateHeight(current->getLeftNode()), calculateHeight(current-> getRightNode())) +1;
     }
@@ -110,7 +110,7 @@ bool BinarySearchTree<Type> :: isComplete()
 }
 
 template <class Type>
-bool BinarySearchTree<Type>::isComplete(BinaryTreeNode<Type> * starNode, int index, int size)
+bool BinarySearchTree<Type>::isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
     if(startNode == nullptr)
     {
@@ -232,20 +232,73 @@ void BinarySearchTree<Type>:: inOrderTransversal(BinaryTreeNode<Type> * inStart)
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type item)
 {
-        
+  //hello
 }
     
 template <class Type>
-bool BinarySearchTree<Type> :: contains(Type value)
+bool BinarySearchTree<Type> :: contains(Type itemToFind)
 {
-    return false;
+    BinaryTreeNode<Type> * current = this->root;
+    if(current == nullptr)
+    {
+        return false;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            if(itemToFind) == current -> getData())
+            {
+                return true;
+            }
+            else if (itemToFind < current -> getData())
+             {
+                 current = current->getLeftNode();
+             }
+            else
+            {
+                current = current->getRightNode();
+            }
+        }
+        return false;
+    }
 }
     
 template <class Type>
-void BinarySearchTree<Type> :: remove(Type item)
+void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 {
-        
-}
+       if(this->root == nullptr)
+       {
+           cout <<"empty tree so removal is not possible" << endl;
+       }
+       else
+       {
+           BinaryTreeNode<Type> * current = this->root;
+           BinaryTreeNode<Type>* previous = nullptr;
+           bool hasBeenFound = false;
+           
+           while(current != nullptr && !hasBeenFound)
+           {
+               if)current->getData() = getRidOfMe)
+               {
+                   hasBeenFound = true;
+               }
+              else
+              {
+                  previous = current;
+                  if(getRidOfMe < current->getData())
+                  {
+                      current =current->getLeftNode();
+                  }
+                  else
+                  {
+                      current = current ->getRightNode();
+                  }
+              }
+           }
+           
+       }
+   }
     
 template <class Type>
 void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * currentNode)

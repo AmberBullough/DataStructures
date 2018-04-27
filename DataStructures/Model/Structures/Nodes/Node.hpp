@@ -44,7 +44,7 @@ void Node<Type>  :: setData (Type data)
 }
 
 template <class Type>
-Tupe Node <Type> :: getData()
+Type Node <Type> :: getData()
 {
     return data;
 }
