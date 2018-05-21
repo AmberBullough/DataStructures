@@ -149,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				D9AA0941202A10E800F069CB /* Node.hpp */,
-				D9D507B220348F0B003B5F37 /* LinearNode.hpp */,
 				D9542E0320445B5100E64594 /* CircularList.hpp */,
+				D9D507B220348F0B003B5F37 /* LinearNode.hpp */,
 				D9BFF87D20446F4700775ACA /* DoubleNode.hpp */,
 				D9A8CAAE206A912F00D950DE /* BinaryTreeNode.hpp */,
 				D9ABF0A920937D9700CD054C /* N_AryTreeNode.hpp */,

@@ -226,14 +226,14 @@ void BinarySearchTree<Type>:: inOrderTransversal(BinaryTreeNode<Type> * inStart)
         cout << "Node contents: " << inStart->getData() << endl;
         cout << "Going right" << endl;
         inOrderTransversal(inStart->getRightNode());
-        
+    }
 }
     
-template <class Type>
-void BinarySearchTree<Type> :: insert(Type item)
-{
+//template <class Type>
+//void BinarySearchTree<Type> :: insert(Type item)
+//{
   //hello
-}
+//}
     
 template <class Type>
 bool BinarySearchTree<Type> :: contains(Type itemToFind)
@@ -247,7 +247,7 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
     {
         while(current != nullptr)
         {
-            if(itemToFind) == current -> getData())
+            if((itemToFind) == current -> getData())
             {
                 return true;
             }
@@ -279,7 +279,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
            
            while(current != nullptr && !hasBeenFound)
            {
-               if)current->getData() = getRidOfMe)
+               if(current->getData() == getRidOfMe)
                {
                    hasBeenFound = true;
                }
@@ -308,6 +308,7 @@ void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * current
      inOrderTransversal(currentNode->getLeftNode());
      cout << currentNode->getData() << endl;
      inOrderTransversal(currentNode->getRightNode());
+ }
 }
     
     template <class Type>
@@ -318,6 +319,7 @@ void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * current
             cout << currentNode->getData() << endl;
             preOrderTransversal(currentNode->getLeftNode());
             preOrderTransversal(currentNode->getRightNode());
+    }
     }
         
 template <class Type>
@@ -330,5 +332,6 @@ void BinarySearchTree<Type> :: postOrderTransversal(BinaryTreeNode<Type> * curre
         cout << currentNode->getData() << endl;
 
     }
+}
     
 #endif /* BinarySearchTree_hpp */
