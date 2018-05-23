@@ -69,7 +69,7 @@ void LinkedList<Type> :: add(Type item)
     this->size += 1;
 }
 
-template <classType>
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this ->size);
@@ -144,16 +144,19 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
     }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
 
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this -> size;
