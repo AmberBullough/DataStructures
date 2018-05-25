@@ -9,13 +9,19 @@
 #include "Controller.hpp"
 #include "ArrayTester.hpp"
 #include "RecursionTester.hpp"
+#include "GraphTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {
-    SortingTester my;
-    my.testSorts();
+    GraphTester myTest;
+    myTest.testGraphs();
+    GraphTester  secondTest;
+    secondTest.testTraversals();
+    
+   // SortingTester my;
+   // my.testSorts();
     
     //RecursionTester test;
    // test.testRecursionNumbers();
@@ -41,32 +47,32 @@ void Controller :: start()
   //  codeTimer.displayInformation();
     
 }
-void Controller :: findMaxAndMin()
-{
-    Timer searchTimer;
-    searchTimer.startTimer();
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/abul1887/Documents/DataStructures2420/DataStructures/DataStructures/Data/crime.csv");
-
-    int minIndex = 0;
-    int maxIndex = 0;
-    
-    for (int index = 1; index < myData.size(); index ++)
-    {
-        if (myData [minIndex] > myData[index])
-        {
-            minIndex = index;
-        }
-       else if (myData [maxIndex] < myData [index])
-        {
-            maxIndex = index;
-        }
-    }
-    searchTimer.stopTimer();
-    cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
-    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
-    searchTimer.displayInformation();
-    
-}
+//void Controller :: findMaxAndMin()
+//{
+//    Timer searchTimer;
+//    searchTimer.startTimer();
+//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/abul1887/Documents/DataStructures2420/DataStructures/DataStructures/Data/crime.csv");
+//
+//    int minIndex = 0;
+//    int maxIndex = 0;
+//
+//    for (int index = 1; index < myData.size(); index ++)
+//    {
+//        if (myData [minIndex] > myData[index])
+//        {
+//            minIndex = index;
+//        }
+//       else if (myData [maxIndex] < myData [index])
+//        {
+//            maxIndex = index;
+//        }
+//    }
+//    searchTimer.stopTimer();
+//    cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
+//    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
+//    searchTimer.displayInformation();
+//
+//}
 //    cout << "Print to the screen some text" << endl;
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();

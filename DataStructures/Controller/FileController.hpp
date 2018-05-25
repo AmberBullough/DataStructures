@@ -24,7 +24,7 @@ class FileController
 {
 public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
-    static LinkedList<CrimeData> readDataToLost(string filename);
+    //static LinkedList<CrimeData> readDataToLost(string filename);
 };
 
 #endif /* FileController_hpp */

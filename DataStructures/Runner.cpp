@@ -6,8 +6,7 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#include "Runner.hpp"
-#inclide "Controller/Controller.hpp"
+#include "Controller/Controller.hpp"
 
 using namespace std;
 int main()
@@ -21,12 +20,12 @@ int main()
     cout << &word2 << endl;
     cout << &word3 << endl;
     unsigned long address = (unsigned long) &sample;
-    
+
     unsigned long * storage;
     storage = new unsigned long [0xffffffff];
     storage[0] = address;
-    
-    cput << address << endl;
+
+    cout << address << endl;
     if (0x7fff5fbff618 == address)
     {
         cout << "the same" << endl;

@@ -19,7 +19,7 @@
 #include "../Model/Structures/Linear/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
-#include "../Testers/TestStacksandQueues.hpp"
+//#include "../Testers/TestStacksandQueues.hpp"
 #include "../Testers/RecursionTester.hpp"
 #include "../Testers/SortingTester.hpp"
 #include "../Testers/GraphTester.hpp"
@@ -29,6 +29,8 @@ class Controller
 {
 private:
     void findMaxAndMin();
+    void testGraph();
+    void testTraversals();
 public:
     void start();
 };

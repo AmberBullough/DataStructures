@@ -217,7 +217,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
 {
     assert(vertex < currentGraph.size());
     bool visited[MAXIMUM];
-    std::set<int>connetions;
+    std::set<int>connections;
     std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
 
@@ -230,11 +230,49 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();
         
-        for(setIterator = connections.bein(); setIterator != connections.end(); setIterator++)
+        for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
         {
             if(!visited[*setIterator])
             {
-                
+                visited[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
+                vertexQueue.push(*setIterator);
+            }
+        }
+    }
+    
+}
+
+template <class Type>
+int Graph<Type> :: costTraversal(Graph<Type> &currentGraph, int start)
+{
+    assert(start >= 0 && start < vertexCount);
+    int cost = 0;
+    bool visited[MAXIMUM];
+    std::set<int> connections;
+    std::set<int>::iterator setIterator;
+    std:: queue<int> vertexQueue;
+    
+    std::fill_n(visited,currentGraph.size(), false);
+    visited[start] = true;
+    
+    vertexQueue.push(start);
+    while(!vertexQueue.empty())
+    {
+        int currentIndex = vertexQueue.front();
+        connections = currentGraph.neighbors(currentIndex);
+        vertexQueue.pop();
+        for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+        {
+            if(!visited[*setIterator])
+            {
+                cost += weightCostMatrix[currentIndex] [*setIterator];
+                visited[*setIterator] = true;
+                vertexQueue.push(*setIterator);
+            }
+        }
+    }
+    return cost;
 }
 
 

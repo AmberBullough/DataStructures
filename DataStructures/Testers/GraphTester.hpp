@@ -25,8 +25,3 @@ public:
 
 #endif /* GraphTester_hpp */
 
-template <class Type>
-GraphTester<Type> : testGraphs()
-{
-    setup();
-}

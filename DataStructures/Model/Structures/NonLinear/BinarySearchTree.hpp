@@ -300,16 +300,16 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
        }
    }
     
-template <class Type>
-void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * currentNode)
-{
- if(currentNode != nullptr)
- {
-     inOrderTransversal(currentNode->getLeftNode());
-     cout << currentNode->getData() << endl;
-     inOrderTransversal(currentNode->getRightNode());
- }
-}
+//template <class Type>
+//void BinarySearchTree<Type> :: inOrderTransversal(BinaryTreeNode<Type> * currentNode)
+//{
+// if(currentNode != nullptr)
+// {
+//     inOrderTransversal(currentNode->getLeftNode());
+//     cout << currentNode->getData() << endl;
+//     inOrderTransversal(currentNode->getRightNode());
+// }
+//}
     
     template <class Type>
     void BinarySearchTree<Type> :: preOrderTransversal(BinaryTreeNode<Type> * currentNode)
