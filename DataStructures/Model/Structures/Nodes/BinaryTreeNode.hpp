@@ -14,7 +14,8 @@
 template <class Type>
 class BinaryTreeNode : public Node<Type>
 {
-    
+protected:
+    void destroyTree(BinaryTreeNode<Type> * node);
 private:
     BinaryTreeNode<Type> * root;
     BinaryTreeNode<Type> * left;
@@ -79,4 +80,8 @@ void BinaryTreeNode<Type>:: setLeftNode(BinaryTreeNode<Type> * left)
 {
     this->left = left;
 }
+
+
+
+
 #endif /* BinaryTreeNode_hpp */
